@@ -43,7 +43,13 @@ GEM
     erubis (2.7.0)
     execjs (1.2.13)
       multi_json (~> 1.0)
+    factory_girl (2.5.0)
+      activesupport
+    factory_girl_rails (1.6.0)
+      factory_girl (~> 2.5.0)
+      railties (>= 3.0.0)
     ffi (1.0.11)
+    gravatar_image_tag (1.0.0)
     guard (0.10.0)
       ffi (>= 0.5.0)
       thor (~> 0.14.6)
@@ -139,6 +145,8 @@ PLATFORMS
 DEPENDENCIES
   annotate
   coffee-rails (~> 3.1.1)
+  factory_girl_rails
+  gravatar_image_tag
   guard-rspec
   jquery-rails
   libnotify
