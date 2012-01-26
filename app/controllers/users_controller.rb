@@ -17,6 +17,8 @@ def create
       redirect_to @user
     else
       @title = "Sign up"
+      #@user.name = ""
+      @user.password = ""
       render :new
     end
   end
