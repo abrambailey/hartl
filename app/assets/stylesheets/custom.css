@@ -144,13 +144,17 @@ div.field, div.actions {
 }
 
 /*sign up form errors*/
-.field_with_errors {
+
+.field_with_errors input {
+	background:#FBE3E4;
+	background-repeat: repeat;
+	border-color:black;
 }
 
 .field_with_errors label {
-  
 }
 
+/*
 #error_explanation {
   width: 400px;
   border: 2px solid red;
@@ -183,3 +187,5 @@ div.field, div.actions {
   font-weight: bold;
   margin: 5px;
 }
+
+*/
