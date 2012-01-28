@@ -1,5 +1,5 @@
-<% if @user.errors.any? %>
-    <% @user.errors.full_messages.each do |msg| %>
+<% if object.errors.any? %>
+    <% object.errors.full_messages.each do |msg| %>
       <div class="flash error"><%= msg %></div>
     <% end %>
 <% end %>

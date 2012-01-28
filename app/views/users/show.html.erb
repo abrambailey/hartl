@@ -1,8 +1,10 @@
 <table class="profile" summary="Profile information">
   <tr>
     <td class="main">
+      <%= gravatar_for @user %>
+    </td>
+    <td class ="username">
       <h1>
-        <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
     </td>
