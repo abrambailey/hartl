@@ -121,8 +121,12 @@ table.profile {
 }
 
 td.main {
-  width: 70%;
-  padding: 1em;
+	width: 150px;
+}
+
+td.username {
+vertical-align:top;
+text-align:left;
 }
 
 td.sidebar {
