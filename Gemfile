@@ -4,6 +4,7 @@ gem 'rails', '3.1.3'
 gem 'therubyracer'
 gem 'pg'
 gem 'gravatar_image_tag'
+gem 'will_paginate'
 
 group :development do
 	gem 'rspec-rails'

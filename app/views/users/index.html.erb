@@ -1,0 +1,28 @@
+<h1>All users</h1>
+
+<div class="digg_pagination">
+    <%= will_paginate @users, :container => false %>
+  </div>
+  
+<table class="users">
+  <% @users.each do |user| %>
+    <tr>
+    	<td class="user_id"><%= user.id %></td>
+      <td class="user_grav"><%= gravatar_for user, :size => 30 %></td>
+      <td><%= link_to user.name, user %></td>
+      <td><%= link_to user.email, user %></td>
+      <% if current_user.admin? %>
+      <td>
+      	<% if current_user != user %>
+      	<%= link_to "delete user", user, :method => :delete, :confirm => "You sure?",
+                                :title => "Delete #{user.name}" %>
+        <% else %>
+        <%= link_to "modify", edit_user_path(current_user) %>
+        <% end %>
+        </td>                  
+      <% end %>
+    </tr>
+  <% end %>
+</table>
+
+
