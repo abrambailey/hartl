@@ -11,7 +11,9 @@
 		      <table class="microposts" summary="User microposts">
 		        <%= render @microposts %>
 		      </table>
+		      <div class="digg_pagination">
 		      <%= will_paginate @microposts %>
+		      </div>
 		    <% end %>
     </td>
     <td class="sidebar round">
